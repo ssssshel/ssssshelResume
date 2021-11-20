@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "urbanistLight";
+  src: url(/layouts/fonts/Urbanist-ExtraLight.ttf); }
+
+@font-face {
+  font-family: "urbanistRegular";
+  src: url(/layouts/fonts/Urbanist-Regular.ttf); }
+
+@font-face {
+  font-family: "urbanistBold";
+  src: url(/layouts/fonts/Urbanist-Bold.ttf); }
+
+@font-face {
+  font-family: "lato";
+  src: url(/layouts/fonts/Lato-Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+body {
+  background-color: #FDDBD8; }
+
+.container {
+  width: 100%;
+  background-color: #FEE9E7;
+  display: flex;
+  justify-content: center; }
+  .container * {
+    overflow: hidden; }
+  .container .resume {
+    width: 56.25rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25.625rem 51.875rem;
+    border: 0.125rem #180302 solid; }
+    .container .resume h2 {
+      width: max-content;
+      font-family: "urbanistRegular";
+      color: #180302;
+      font-size: 1.25rem;
+      border-bottom: solid #F44D3E 0.25rem; }
+    .container .resume .row1Col1 {
+      background-color: #180302;
+      padding-left: 3.75rem;
+      padding-top: 5.625rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem; }
+      .container .resume .row1Col1 #cboLanguage {
+        position: absolute;
+        top: 0.625rem;
+        background-color: transparent;
+        color: #FDDBD8;
+        width: min-content; }
+        .container .resume .row1Col1 #cboLanguage option {
+          color: #180302; }
+      .container .resume .row1Col1 .name {
+        width: 18.75rem;
+        border-bottom: 0.125rem #F44D3E solid; }
+        .container .resume .row1Col1 .name h1 {
+          font-family: "urbanistLight";
+          color: #FEE9E7;
+          font-size: 3.75rem;
+          font-weight: lighter; }
+      .container .resume .row1Col1 .dev {
+        font-family: "lato";
+        color: #F44D3E;
+        font-size: 1.375rem; }
+    .container .resume .row1Col2 {
+      width: 100%;
+      overflow: hidden; }
+    @supports (object-fit: cover) {
+      .container .resume .row1Col2 img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center; } }
+    .container .resume .row2Col1 {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding: 3.75rem;
+      background-color: #FDDBD8; }
+      .container .resume .row2Col1 .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem; }
+        .container .resume .row2Col1 .profile .profileInfo {
+          font-family: "lato";
+          color: #180302;
+          font-size: 0.875rem;
+          line-height: 1.6875rem;
+          padding-right: 1.25rem; }
+      .container .resume .row2Col1 .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem; }
+        .container .resume .row2Col1 .contact ul {
+          display: flex;
+          flex-direction: column;
+          gap: 0.9375rem; }
+          .container .resume .row2Col1 .contact ul li {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5625rem;
+            align-items: center; }
+            .container .resume .row2Col1 .contact ul li i {
+              font-size: 1.0625rem;
+              color: #180302; }
+            .container .resume .row2Col1 .contact ul li a,
+            .container .resume .row2Col1 .contact ul li p {
+              font-size: 0.875rem;
+              color: #252323; }
+            .container .resume .row2Col1 .contact ul li a,
+            .container .resume .row2Col1 .contact ul li p {
+              text-decoration: none;
+              font-family: "Lato";
+              font-weight: bold; }
+            .container .resume .row2Col1 .contact ul li a:hover,
+            .container .resume .row2Col1 .contact ul li p:hover {
+              color: #F44D3E; }
+      .container .resume .row2Col1 .education {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9375rem; }
+        .container .resume .row2Col1 .education .educationComponent {
+          display: flex;
+          flex-direction: column;
+          gap: 0.9375rem; }
+          .container .resume .row2Col1 .education .educationComponent .career {
+            font-family: "Lato";
+            color: #180302;
+            font-size: 0.875rem;
+            font-weight: bold; }
+          .container .resume .row2Col1 .education .educationComponent .institution {
+            font-family: "Lato";
+            color: #180302;
+            font-size: 0.8125rem; }
+          .container .resume .row2Col1 .education .educationComponent .period {
+            font-family: "urbanistRegular";
+            color: #180302;
+            font-size: 0.8125rem;
+            font-weight: bold; }
+    .container .resume .row2Col2 {
+      display: flex;
+      flex-direction: column;
+      gap: 3.125rem;
+      padding: 3.75rem; }
+      .container .resume .row2Col2 .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem; }
+        .container .resume .row2Col2 .experience .experienceComponent {
+          display: flex;
+          flex-direction: column;
+          gap: 0.9375rem; }
+          .container .resume .row2Col2 .experience .experienceComponent .enterprise {
+            font-family: "Lato";
+            color: #180302;
+            font-size: 0.875rem; }
+          .container .resume .row2Col2 .experience .experienceComponent .job {
+            font-family: "Lato";
+            color: #180302;
+            font-size: 0.8125rem;
+            font-weight: bold; }
+          .container .resume .row2Col2 .experience .experienceComponent ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem; }
+            .container .resume .row2Col2 .experience .experienceComponent ul .function {
+              font-family: "Lato";
+              color: #180302;
+              font-size: 0.875rem;
+              line-height: 1.25rem; }
+      .container .resume .row2Col2 .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem; }
+        .container .resume .row2Col2 .skills ul {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem; }
+          .container .resume .row2Col2 .skills ul .skillComponent {
+            font-family: "Lato";
+            color: #180302;
+            font-size: 0.875rem;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem; }
+            .container .resume .row2Col2 .skills ul .skillComponent .sks .skillSubcomponent {
+              font-family: "urbanistRegular";
+              color: #180302;
+              font-size: 0.875rem;
+              font-weight: lighter; }
