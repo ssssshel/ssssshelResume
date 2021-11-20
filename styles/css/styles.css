@@ -32,9 +32,10 @@ body {
   gap: 1.25rem;
   align-items: center; }
   .container .back {
-    font-family: "urbanistBold";
+    font-family: "urbanistRegular";
     color: #180302;
     font-size: 1.125rem;
+    font-weight: bolder;
     text-decoration: none;
     margin-bottom: 2.5rem; }
     .container .back span:hover {
@@ -73,10 +74,9 @@ body {
         width: 18.75rem;
         border-bottom: 0.125rem #F44D3E solid; }
         .container .resume .row1Col1 .name h1 {
-          font-family: "urbanistLight";
+          font-family: "urbanistRegular";
           color: #FEE9E7;
-          font-size: 3.75rem;
-          font-weight: lighter; }
+          font-size: 3.75rem; }
       .container .resume .row1Col1 .dev {
         font-family: "lato";
         color: #F44D3E;
